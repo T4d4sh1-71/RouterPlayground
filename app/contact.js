@@ -11,6 +11,8 @@ export default function App() {
     <LinkButton page="/" title="Go to Main Page" />
     <Text></Text>
     <LinkButton page="about" title="Go to About Page" />
+    <Text></Text>
+    <LinkButton page="something" title="Go to something"/>
     </View>
   );
 }

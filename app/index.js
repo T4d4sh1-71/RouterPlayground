@@ -8,10 +8,11 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.text}>Main Page</Text>
       <Text></Text>
-      <LinkButton page="about" title="Go to About Page" />
+      <View style={styles.button}>
+      <LinkButton style={styles.button} page="about" title="Go to About Page" />
       <Text></Text>
-      <LinkButton page="contact" title="Go to Contact Page" />
-   
+      <LinkButton style={styles.button} page="contact" title="Go to Contact Page" />
+      </View>
 
 
     </View>
@@ -30,5 +31,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  button: {
+    flex: 0.5,
+    backgroundColor: 'cyan',
+    alignItems: 'center',
+    justifyContent: 'center',
+    radius: 1,
+
   },
 });

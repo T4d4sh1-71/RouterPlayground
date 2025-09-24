@@ -1,16 +1,16 @@
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import LinkButton from '../components/LinkButton';
+import LinkButton from '../../components/LinkButton';
 
-export default function About() {
+export default function SecondSomething() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>About page</Text>
-    <Text> </Text>
-     <LinkButton page="contact" title="Go to Contact Page" />
-     <Text> </Text>
-     <LinkButton page="/" title="Go to Main Page" />
+      <Text style={styles.text}>Second something page</Text>
+      <Text></Text>
+    <LinkButton page="/" title="Go to Main Page" />
+    <Text></Text>
+   <LinkButton page="first" title="Go to the first page"/>
     </View>
   );
 }
@@ -18,7 +18,7 @@ export default function About() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: 'yellow',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -28,5 +28,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  
 });
