@@ -10,7 +10,7 @@ export default function LookHere() {
       <Text></Text>
     <LinkButton page="/" title="Go to Main Page" />
     <Text></Text>
-    <LinkButton page="videoPage" title="Go to Video Page" />
+    <LinkButton page="aVideoPage" title="Go to Video Page" />
 
     </View>
   );

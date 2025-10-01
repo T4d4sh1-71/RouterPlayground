@@ -1,7 +1,11 @@
 import { Link } from 'expo-router/drawer';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Linking, Pressable, Alert } from 'react-native';
 import LinkButton from '../../components/LinkButton';
+
+const url= "https://www.youtube.com/watch?v=oHg5SJYRHA0"
+
+
 
 export default function First() {
   return (
@@ -10,7 +14,12 @@ export default function First() {
       <Text></Text>
     <LinkButton page="/" title="Go to Main Page" />
     <Text></Text>
-
+    <Text></Text>
+    <Text>
+    </Text>
+    <Pressable onPress={() => Linking.openURL(url)}> 
+    <Text style={[styles.surprise]}> click here for a surprise </Text>
+    </Pressable>
     </View>
   );
 }
@@ -28,4 +37,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  surprise: {
+    flex: 0.1,
+    backgroundColor: 'orange',
+    borderRadius: 50,
+    alignContent: 'center',
+    justifyContent: 'center',
+  }
 });

@@ -6,16 +6,13 @@ import LinkButton from '../components/LinkButton';
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Main Page</Text>
+      <Text style={styles.text}>  Main Page  </Text>
       <Text></Text>
-      <View style={styles.button}>
-      <LinkButton style={styles.button} page="about" title="Go to About Page" />
+      <LinkButton styles={styles.aboutPage} page="about" title="Go to About Page" />
       <Text></Text>
-      <LinkButton style={styles.button} page="contact" title="Go to Contact Page" />
-      </View>
-
-
+      <LinkButton page="contact" title="Go to Contact Page"  />    
     </View>
+    
   );
 }
 
@@ -28,17 +25,26 @@ const styles = StyleSheet.create({
   },
   text: {
     flex: 0.03,
+    borderRadius: 50,
     backgroundColor: 'white',
+    alignItems: "flex-start",
+  },
+  aboutPage: {
+    flex: 0.3,
+    width: 200,
+    backgroundColor: 'green',
+    borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  button: {
-    flex: 0.5,
-    backgroundColor: 'cyan',
+  contactPage: {
+    flex: 0.3,
+    width: 200,
+    backgroundColor: 'navy blue',
+    borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    
-    
+  }
 
   },
-});
+);

@@ -6,7 +6,7 @@ import LinkButton from '../components/LinkButton';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Contact page</Text>
+      <Text style={styles.text}>  Contact page  </Text>
       <Text></Text>
     <LinkButton page="/" title="Go to Main Page" />
     <Text></Text>
@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
   },
   text: {
     flex: 0.03,
+    borderRadius: 50,
     backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "flex-start",
   },
 });
